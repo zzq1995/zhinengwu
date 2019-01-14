@@ -1,0 +1,435 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+img{border:0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.box{
+    width: 100%;
+    height: auto;
+    background:#fff;
+
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #EDEEF3;
+}
+.m{
+    width: 1200px;
+    height: 80px;
+    margin: 0px auto;
+}
+.logo{
+    width: 230px;
+    padding-top: 20px;
+    float: left;
+    padding-bottom: 24px;
+}
+.logo>a>img{
+    width: 100%;
+    height: 100%;
+}
+.head-right{
+    width: 800px;
+    height: 80px;
+    line-height: 79px;
+    float: right;
+}
+.head-right>ul>li{
+    font-size: 14px;
+    float: left;
+    margin-left: 73px;
+}
+.head-right>ul>li:hover a{
+    color: #01B0F1;
+}
+.head-right>ul>li:hover{
+    animation: shake 2s;
+}
+.head-right>ul>li:nth-child(2) a{
+    color: #01B0F1;
+}
+.head-right>ul>li>a{
+    color: #333;
+}
+#app{
+    position: relative;
+}
+#app:hover .pr{
+    display: block;
+}
+.pr{
+    position: absolute;
+    z-index: 99;
+    top: 80px;
+    left: -31px;
+    display: none;
+}
+.pr>img{
+    width: 120px;
+    height: 120px;
+}
+/* 头部 */
+.ej{
+    width: 100%;
+    height: 120px;
+    background: #000;
+}
+.ej>ul{
+    width: 1200px;
+    height: 120px;
+    margin: 0px auto;
+}
+.ej>ul>li{
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 28px;
+    font-size: 12px;
+    transition: 1s linear;
+}
+.ej>ul>li:hover{
+    transform: translateY(-20px);
+
+}
+.ej>ul>li>a{
+    color: #C9C9C9;
+}
+/* 智能屋主机 */
+.con1{
+    width: 100%;
+    height: 650px;
+    background: #E6E6E6;
+    overflow: hidden;
+}
+#m{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+#tu1{
+    animation:myzn 1.2s;
+    animation-delay: 0.3s;
+    animation-fill-mode:forwards;
+}
+#ck1{
+    animation:mym3 1.2s;
+    animation-delay: 0.3s;
+    animation-fill-mode:forwards;
+}
+#co1{
+    animation:myco3 1.2s;
+    animation-delay: 0.3s;
+    animation-fill-mode:forwards;
+}
+@keyframes myzn{
+    0% {transform: translateY(-40px);opacity: 0;}
+    100% {transform: translateY(0px);opacity: 1;}
+}
+h3{
+    margin-top: 25px;
+    font-size: 28px;
+    color: #000;
+    line-height: 28px;
+    font-weight: 300;
+}
+h4{
+    margin-top: 35px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 300;
+}
+.p1{
+    color: #656565;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.ck{
+    width: 150px;
+    height: 20px;
+    margin: 0px auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lf>a{
+    font-size: 16px;
+    color: #6391FD;
+}
+.lf>a:hover{
+    text-decoration: underline;
+}
+.ri>a:hover{
+    text-decoration: underline;
+}
+.ri>a{
+    font-size: 16px;
+    color: #6391FD;
+}
+.tu{
+    width: 100%;
+    height: 200px;
+    margin: 0px auto;
+    margin-top: 70px;
+}
+
+/* 万能遥控器 */
+.con2{
+    width: 100%;
+    height: 700px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+.m2,#m2{
+    width: 1200px;
+    padding-top: 30px;
+    height: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+/* 智能门锁 */
+.con3{
+    width: 100%;
+    height: 800px;
+    background: #E6E6E6;
+    overflow: hidden;
+}
+#m3{
+    width: 1200px;
+    padding-top: 20px;
+    height: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+.content,.ck,.tu{
+    opacity:0;
+}
+@keyframes mym3{
+    0%{opacity: 0;transform: translateX(1000px);}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+@keyframes myco3{
+    0%{opacity: 0;transform: translateX(-1000px);}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+/* 智能开关 */
+#tu4{
+    width: 1000px;
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+}
+#img1,#img2,#img3,#img4{
+    opacity: 0;
+    box-shadow: 8px 6px 9px #E6E6E6;
+}
+/* 电动窗帘 */
+#qw{
+    width: 100%;
+    height: 800px;
+}
+/* 影音家电 */
+#tu7{
+    opacity: 1;
+    margin-top:100px;
+}
+#imgtu1,#imgtu2{
+    opacity: 0;
+}
+#imgtu1{
+    margin-right:200px;
+}
+
+/* 尾部 */
+footer{
+    width: 100%;
+    height:375px;
+    background: #EFEFEF;
+    overflow: hidden;
+}
+.conta{
+    width: 1200px;
+    height: 280px;
+    margin: 0px auto;
+    margin-top: 62px;
+}
+#assist{
+    float: left;
+}
+#assist>ul>li{
+    height: 250px;
+    border-left: 1px solid #bfbfbf;
+    float: left;
+    margin-right: 60px;
+}
+#assist>ul>li>h3{
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top:0px;
+}
+#assist>ul>li>.women>a>p:hover {
+    color: #01B0F1;
+}
+.women{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.women>a{
+    color: #333;
+}
+.women>a>p{
+    line-height: 30px;
+}
+#dexter{
+    float: right;
+}
+#dexter>ul{
+    height: 126px;
+}
+#dexter>ul>li{
+    float: left;
+    margin-left: 30px;
+}
+#dexter>ul>li>img{
+    width: 103px;
+    height: 103px;
+}
+#dexter>ul>li>p{
+    font-size: 14px;
+    color: #333333;
+    margin-left: 10px;
+}
+#dexter>p{
+    font-size: 16px;
+    color: #333;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left:30px;
+}
+/* 底部 */
+.di{
+    width: 100%;
+    height: 100px;
+    background: #1F1F23;
+}
+.bu{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+@keyframes mybu{
+    0%{transform:translateY(1000px);}
+    100%{transform:translateX(0px);}
+}
+.di>.bu>p{
+    font-size: 14px;
+    color: #fff;
+    line-height: 100px;
+}
+.jia>ul>li{
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.jia>ul>li:hover img{
+    opacity: 0.5;
+}
+@keyframes img1{
+    from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translate3d(0px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+@keyframes img2 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translate3d(0px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+@keyframes img3 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translate3d(0px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+@keyframes img4 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translate3d(0px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
